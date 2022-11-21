@@ -24,7 +24,7 @@ function calcimc(calculadora) {
 
     let calculo = (kilos / Math.pow(centiM, 2)).toFixed(1);
     if (calculo <= 16) {
-        document.getElementById('resultado').innerHTML = "<h3> Tu IMC es de " + calculo + "</br> <span style='color: #007bff;'>Desnutrición Sever</span>a</h3>";
+        document.getElementById('resultado').innerHTML = "<h3> Tu IMC es de " + calculo + "</br> <span style='color: #007bff;'>Desnutrición Severa</span></h3>";
     }
     else if (calculo <=18,4) {
         document.getElementById('resultado').innerHTML = "<h3> Tu IMC es de " + calculo + "</br> <span style='color: #007bff;'>Desnutrición Moderada</span></h3>";
