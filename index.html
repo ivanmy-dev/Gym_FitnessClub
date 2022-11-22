@@ -2,6 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -193,7 +195,28 @@
             </div>
         </footer>
     </div>
-    <!-- Scripts -->
+    <!-- scripts -->
+<script type="text/javascript"> /*Aviso de pagina ficticia sin resposive.*/
+
+swal("","El Diseño de esta página web no es RESPONSIVE!", "info", {
+    buttons: {
+      catch: {
+        text: "Siguiente",
+        value:"catch"
+      }  
+    }
+})
+.then((value) =>{
+ switch (value){
+    case "catch":
+        swal("","Esta página web solo es un proyecto de diseño.", "info")
+        break;
+ }
+});
+
+
+</script>
+    
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
@@ -210,6 +233,6 @@
             })
         document.getElementById("contactoform").addEventListener("submit", function (event) { event.preventDefault() });
     </script>
-    <!--  -->
+ <!--  -->
 </body>
 </html>
